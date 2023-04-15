@@ -12,6 +12,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
         StandardCalculator calc = new StandardCalculator();
+        ScientificCalculator calc2 = new ScientificCalculator();
         calc.add(1,2);
         System.out.println(calc.getResult());
         calc.subtract(5,4);
@@ -20,6 +21,18 @@ public class App {
         System.out.println(calc.getResult());
         calc.divide(4,2);
         System.out.println(calc.getResult());
+
+        
+
+        //double result= calc2.cubeOf(4.0);
+
+        //System.out.println("cube =" + result);
+
+        int result= calc2.modulo(5, 2);
+
+        System.out.println("modulo =" + result);
+
+
        
     }
    
